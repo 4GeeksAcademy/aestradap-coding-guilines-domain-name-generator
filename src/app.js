@@ -4,13 +4,9 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { pronoun, adj, noun } from "./arraysData";
 
 window.onload = function() {
-  //write your code here
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
-
   const generateCombis = () => {
     for (const pronounValue of pronoun) {
       for (const adjValue of adj) {
@@ -37,5 +33,7 @@ window.onload = function() {
   console.log(pronoun);
   console.log(adj);
   console.log(noun);
+
+  //this function await 2 seg and then call the generateCombis().
   asyncCall();
 };
